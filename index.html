@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>PUZZLE GAME</title>
+    <link rel='stylesheet' href='style.css'>
+    <script src='script.js' defer></script>
+
+</head>
+
+<body class='gameBackground'>
+
+    <!-- game logo title  -->
+    <img id='upperleftTitle' src="./assets/TITLE.webp" alt="title of the game" >
+
+    <!-- this is the container for the left size -->
+    <div class='leftContainer'>
+
+        <!-- counter -->
+        <h2 id='movesLeft'> 0 </h2>
+
+        <div class='gameContainer'></div>
+        <!-- buttons -->
+        <div class='buttonBottom'>
+            <button class='buttons' onclick="instructionToggle()" id='instructionsBtn'>INSTRUCTIONS</button>
+            <button class='buttons' id='restartBtn'>RESTART</button>
+            <button class='buttons' onclick="guideImageToggle()" id='guideImage'>GUIDE IMAGE</button>
+
+        </div>
+
+    </div>
+
+    <!-- INSTRUCTIONS -->
+
+    <div id='showInstruction'>
+        
+        <h2 id='headerInstruction'>INSTRUCTIONS</h2>
+        
+        <p class='paragraphInstructions'>
+            The SLIDER PUZZLE is a sliding puzzle that is played on a 3-by-3 grid with 8 tiles made of images, plus a blank square. 
+        </p>
+        <img id='instructionImg' src="./assets/instruction.gif" alt="instructions">
+        <p class='paragraphInstructions'>
+            The goal is to rearrange the tiles until you form the image within a Maximum of 50 moves.
+        </p>
+        <p class='paragraphInstructions'>
+            You are permitted to slide tiles either horizontally or vertically into the blank square only. 
+        </p>
+        
+        
+    </div>
+
+    <!-- GUIDE IMAGE -->
+    <div id="imageGuide">
+        <img src="./assets/guide.webp" alt="Image Guide">
+    </div>
+
+    <!-- intro of logo and start button -->
+    <div id="startImage">
+        <img id='titleImage' src="./assets/TITLE.webp" alt="SLIDER PUZZLE">
+        <button id='startButton' onclick="startToggle()" > START GAME </button>
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+#upperleftTitle{
+    position: fixed;
+    width: 100px;
+}
+.gameBackground {
+    background-image: url(./assets/BACKGROUND5.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: row wrap;
+    width: 100%;
+    height: 100vh;
+
+}
+
+/* left container */
+
+.gameContainer {
+    margin-top: 50px;
+    width: 410px;
+    box-shadow: 3px 4px 6px 2px rgba(20, 21, 21, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.gameContainer img {
+    width: calc(100%/3);
+    padding: 2px;
+}
+
+#movesLeft {
+    margin-top: 55px;
+    font-size: 50px;
+    color: #fff;
+}
+
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px 200px 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* IMAGE GUIDE container */
+
+
+.buttonBottom {
+    margin-top: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: space-evenly;
+}
+
+.buttons:hover {
+    color: aqua;
+}
+
+#showInstruction {
+    display: flex;
+    flex-flow: column wrap;
+    position: fixed;
+    top: 0;
+    width: 450px;
+    padding: 5%;
+    transition: all .5s ease-out;
+    text-align: justify;
+    align-content: center;
+    display: none;
+}
+
+
+#headerInstruction {
+    color: #b9b9b9;
+    display: inline-block;
+    margin: 10px 0px 10px 0px;
+}
+
+.paragraphInstructions {
+    font-size: 16px;
+    color: #b9b9b9;
+    display: inline-block;
+    margin: 10px 0px;
+    font-weight: 700;
+}
+
+#instructionImg {
+    width: 280px;
+}
+
+
+.buttons {
+    font-size: 16px;
+    font-weight: 900;
+    padding: 10px;
+    background: transparent;
+    border: 0px;
+    color: white;
+}
+
+#imageGuide {
+    position: fixed;
+    top: 170px;
+    left: 1100px;
+    display: none;
+}
+
+/* start */
+#startImage {
+    position: fixed;
+    top: 149px;
+    left: 540px;
+    background-image: url(./assets/introbackground.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titleImage {
+    width: 455px;
+}
+
+#startButton {
+    font-size: 30px;
+    font-weight: 900;
+    color: #db5a04;
+    background-color: #fffc00;
+    padding: 10px;
+    border: 5px solid #db5a04;
+    width: 300px;
+    position: absolute;
+    top: 320px;
+}
+
+/* media query */
